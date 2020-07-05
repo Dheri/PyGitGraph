@@ -1,5 +1,4 @@
-# GitPython
+GitPython
 networkx
 matplotlib
 scipy
-pydriller
