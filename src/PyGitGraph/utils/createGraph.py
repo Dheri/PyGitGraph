@@ -6,7 +6,9 @@ import os
 
 
 def create_graph():
-    dir_path = os.path.join(os.getenv("userprofile"), 'code', "cnn-explainer")
+    repo_name = "progit2"
+    code_dir = "code"
+    dir_path = os.path.join(os.getenv("userprofile"), code_dir, repo_name)
     repo = Repo(dir_path)
     print(dir_path)
     graph = nx.DiGraph()
@@ -35,7 +37,7 @@ def create_graph():
     print(list(graph.nodes(data=True)))
 
     nx.draw_networkx(graph, **options)
-    nx.write_gexf(graph, 'output.gexf')
+    nx.write_gexf(graph, '{}.gexf'.format(repo_name))
     plt.show()
 
 
