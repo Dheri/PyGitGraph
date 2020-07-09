@@ -2,7 +2,7 @@
 
 ## What it does?
 
-Analyzes git history and an create a graph of commits, which is exported as `.gexf` format
+Analyze git history and create a graph of commits, which is exported as `.gexf` format. Exported file can then be imported into tools like Gephi
 
 ## Example 
 
